@@ -5,6 +5,11 @@
     <ImplicitUsings>enable</ImplicitUsings>
     <Nullable>enable</Nullable>
     <GeneratePackageOnBuild>True</GeneratePackageOnBuild>
+    <PackageReleaseNotes>Initial test release</PackageReleaseNotes>
+    <Description>A nuget package for validating license plates</Description>
+    <RepositoryType>git</RepositoryType>
+    <RepositoryUrl>https://github.com/Grublaff/LicensePlateValidation</RepositoryUrl>
+    <Authors>Filip Alburg</Authors>
   </PropertyGroup>
 
 </Project>

@@ -26,4 +26,16 @@ public class ValidatorTest
 
         Assert.AreEqual(result, false);
     }
+
+    [DataRow("ASDASD", "ABAC123")]
+    [TestMethod]
+    [ExpectedException(typeof(NotImplementedException))]
+    public void Should_Return_Throw_Not_Implemented_Exception_When_No_Country_Code_Can_Be_Found(string CountryCode, string LicensePlate)
+    {
+        var prg = new Program();
+
+        prg.ValidateLicensePlateNumber(CountryCode, LicensePlate);
+
+        Assert.Fail();
+    }
 }
